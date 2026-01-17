@@ -101,5 +101,8 @@ footer .nav-link{
 .navbar{
     padding: 30px 10px !important;
   }
+.card-swiper{
+    height: auto !important;
+}  
  }
 
