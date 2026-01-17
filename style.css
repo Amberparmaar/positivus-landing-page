@@ -90,12 +90,13 @@ footer .nav-link{
 }
 .btn:hover{
     background-color: #B9FF66;
+}
 @media screen and (max-width:800px) {
 .card{
     height: auto !important;
 }
 }
-}
+
 @media screen and (max-width:450px) {
 .navbar{
     padding: 30px 10px !important;
