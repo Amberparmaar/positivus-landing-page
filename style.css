@@ -3,7 +3,6 @@
 
 :root{
     --greencolor:#B9FF66;
-    --blackcolor: #191A23;
     --graycolor: #F3F3F3;
 }
 *{
@@ -14,4 +13,87 @@
     list-style-type:none;
     scroll-behavior: smooth;
     font-family: "Space Grotesk", sans-serif;
+}
+.textgreen{
+    color: var(--greencolor);
+}
+.textgray{
+    color: var(--graycolor);
+}
+.nav-link{
+    color: black;
+    transition: color 1s ease-in-out;
+}
+.nav-link:hover{
+    color: var(--greencolor);
+}
+.brands{
+    background-color: #F3F3F3;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.card{
+    background-color: var(--graycolor);
+    border: 1px solid black;
+    border-bottom: 5px solid black;
+
+}
+.accordion-button{
+  box-shadow: none !important;
+}
+
+/* swiper js */
+
+    .swiper {
+      width: 100%;
+      height: auto;
+      padding-bottom: 40px;
+    }
+
+    /* Card style */
+    .card-swiper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+      border-radius: 12px;
+      padding: 20px;
+      height: 200px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: white;
+       border: 2px solid var(--greencolor);
+    }
+.swiper-pagination-bullet-active{
+    background-color: #B9FF66 !important;
+}
+footer .nav-link{
+    color: white;
+    transition: color 1s ease-in-out;
+}
+.width-email{
+    width: 40%;
+}
+.btn-footer{
+    width: 40%;
+}
+#exampleFormControlInput1::placeholder{
+    color: white;
+}
+.btn{
+    transition: background-image 1.5s ease-in-out;
+}
+.btn:hover{
+    background-image:  linear-gradient(100deg,rgba(150, 217, 69, 0.85) 4%, rgba(179, 179, 179, 1) 70%, rgba(247, 247, 247, 1) 70%);
+}
+@media screen and (max-width:800px) {
+.card{
+    height: auto !important;
+    
+}
 }

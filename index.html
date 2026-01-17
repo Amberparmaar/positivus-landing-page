@@ -1,29 +1,792 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- font awsome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-     <!-- bootstrape css -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-      <!-- custom css -->
-       <link rel="stylesheet" href="./style.css">
+  <!-- bootstrape css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-    <!-- header start -->
+  <!-- header start -->
+  <nav class="container-xxl navbar navbar-expand-lg bg-white fixed-top top-0 start-0 end-0 py-3 px-5">
+    <div class="container-xxl">
+      <a class="navbar-brand img-fluid" href="#"><img src="./assets/logonav.png" alt="nav-logo" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 me-4">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Use Cases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-dark px-3 py-2" type="submit">
+          Request a quote
+        </button>
+      </div>
+    </div>
+  </nav>
 
-    
-  <!-- header end -->    
+  <!-- header end -->
+  <!-- hero start -->
+  <section class="container-xxl mt-5 pt-5">
+    <div class="row px-5">
+      <div class="col-12 col-lg-6 col-md-6 py-5">
+        <h1 class="fw-bold mb-3">
+          Navigating the <br />
+          digital landscape <br />
+          for success
+        </h1>
+        <p class="my-4">
+          Our digital marketing agency helps businesses grow and succeed
+          online through a range of services including SEO, PPC, social media
+          marketing, and content creation.
+        </p>
+        <button type="button" class="btn btn-dark px-4 py-3 rounded-3">
+          Book a consultation
+        </button>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6">
+        <img class="img-fluid" src="./assets/Illustration.png" alt="hero-image" />
+      </div>
+    </div>
+  </section>
+  <!-- hero end -->
+  <!-- brands start -->
+  <section class="brands container-xxl d-flex justify-content-around align-items-center gy-3 flex-wrap mt-5 p-4">
+    <img class="img-fluid" src="./assets/brand1.png" alt="brand1" />
+    <img class="img-fluid" src="./assets/brand2.png" alt="brand2" />
+    <img class="img-fluid" src="./assets/brand3.png" alt="brand3" />
+    <img class="img-fluid" src="./assets/brand4.png" alt="brand4" />
+    <img class="img-fluid" src="./assets/brand5.png" alt="brand5" />
+    <img class="img-fluid" src="./assets/brand6.png" alt="brand6" />
+  </section>
+  <!-- brands end -->
 
+  <!-- services start -->
+  <section class="container-xxl mt-5 pt-5">
+    <div class="d-inline-block ps-4">
+      <h3 class="rounded-2 px-1 py-3" style="background-color: var(--greencolor)">
+        Services
+      </h3>
+    </div>
+    <p class="ms-4 d-inline-block w-50">
+      At our digital marketing agency, we offer a range of services to help
+      businesses grow and succeed online. These services include:
+    </p>
+    <!-- row 1 -->
+    <div class="row d-flex justify-content-around align-items-center pt-5">
+      <!-- card 1 -->
+      <div class="card mb-3 rounded-5 p-4" style="max-width: 540px; height: 250px">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title d-inline" style="background-color: var(--greencolor)">
+                Search engine<br />optimization
+              </h5>
+              <p class="card-text mt-5">
+                <img class="img-fluid icon" src="./assets/Icon1.png" alt="" /><small class="text-body-secondary">Learn
+                  more</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 pt-4">
+            <img src="./assets/Illustration (1).png" class="img-fluid rounded-start" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card mb-3 rounded-5 p-4" style="
+            max-width: 540px;
+            height: 250px;
+            background-color: var(--greencolor);
+          ">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title d-inline" style="background-color: white">
+                Pay-per-click<br />advertising
+              </h5>
+              <p class="card-text mt-5">
+                <img class="img-fluid icon" src="./assets/Icon2.png" alt="" /><small class="text-body-secondary">Learn
+                  more</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 pt-4">
+            <img src="./assets/Illustration2.png" class="img-fluid rounded-start" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="card mb-3 rounded-5 p-4" style="max-width: 540px; height: 250px; background-color: black">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title d-inline" style="background-color: white">
+                Social Media<br />Marketing
+              </h5>
+              <p class="card-text mt-5">
+                <img class="img-fluid icon" src="./assets/Icon2.png" alt="" /><small class="text-white">Learn
+                  more</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 pt-4">
+            <img src="./assets/Illustration3.png" class="img-fluid rounded-start" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="card mb-3 rounded-5 p-4" style="max-width: 540px; height: 250px">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title d-inline" style="background-color: var(--greencolor)">
+                Email<br />Marketing
+              </h5>
+              <p class="card-text mt-5">
+                <img class="img-fluid icon" src="./assets/Icon1.png" alt="" /><small class="text-body-secondary">Learn
+                  more</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 pt-4">
+            <img src="./assets/illustration4.png" class="img-fluid rounded-start" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div class="card mb-3 rounded-5 p-4" style="
+            max-width: 540px;
+            height: 250px;
+            background-color: var(--greencolor);
+          ">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title d-inline" style="background-color: white">
+                Content<br />Creation
+              </h5>
+              <p class="card-text mt-5">
+                <img class="img-fluid icon" src="./assets/Icon1.png" alt="" /><small class="text-body-secondary">Learn
+                  more</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 pt-4">
+            <img src="./assets/Illustration5.png" class="img-fluid rounded-start" alt="..." />
+          </div>
+        </div>
+      </div>
+      <!-- card 6 -->
+      <div class="card mb-3 rounded-5 p-4" style="max-width: 540px; height: 250px; background-color: black">
+        <div class="row flex-wrap g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title d-inline" style="background-color: white">
+                Analytics and<br />Tracking
+              </h5>
+              <p class="card-text mt-5">
+                <img class="img-fluid icon" src="./assets/Icon2.png" alt="" /><small class="text-white">Learn
+                  more</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 pt-4">
+            <img src="./assets/Illustration6.png" class="img-fluid rounded-start" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- services end -->
+  <!-- section 3 start -->
+  <section class="container-xxl pt-5 rounded-5 mt-5" style="background-color: var(--graycolor)">
+    <div class="row d-flex align-items-center px-5">
+      <div class="col-12 col-lg-6 col-md-6 py-5">
+        <h1 class="fw-bold mb-3">Let’s make things happen</h1>
+        <p class="my-4">
+          Contact us today to learn more about how our digital marketing
+          services can help your business grow and succeed online. Get your
+          free proposal.
+        </p>
+        <button type="button" class="btn btn-dark px-4 py-3 rounded-3">
+          Get your free proposal
+        </button>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6 text-center">
+        <img class="img-fluid" src="./assets/Illustration (3).png" alt="hero-image" />
+      </div>
+    </div>
+  </section>
 
+  <!-- section 3 end -->
+  <!-- case study start -->
+  <section class="container-xxl mt-5 pt-5">
+    <div class="d-inline-block ps-4">
+      <h3 class="rounded-2 px-1 py-3" style="background-color: var(--greencolor)">
+        Case Studies
+      </h3>
+    </div>
+    <p class="ms-4 d-inline-block w-50">
+      Explore Real-Life Examples of Our Proven Digital Marketing Success
+      through Our Case Studies.
+    </p>
+    <div class="row gy-4 bg-dark p-5 mt-5 rounded-5">
+      <div class="col-12 col-lg-4 col-md-4">
+        <div class="card border border-0 border-end border-2 border-secondary-subtle bg-dark rounded-0">
+          <div class="card-body">
+            <p class="card-text textgray">
+              For a local restaurant, we implemented a targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.
+            </p>
+            <a href="#" class="btn textgreen">Learn more
+              <img class="img-fluid" src="./assets/Icon3.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-4">
+        <div class="card border border-0 border-end border-2 border-secondary-subtle bg-dark rounded-0">
+          <div class="card-body">
+            <p class="card-text textgray">
+              For a B2B software company, we developed an SEO strategy that
+              resulted in a first page ranking for key keywords and a 200%
+              increase in organic traffic.
+            </p>
+            <a href="#" class="btn textgreen">Learn more
+              <img class="img-fluid" src="./assets/Icon3.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-4">
+        <div class="card border border-0 bg-dark">
+          <div class="card-body">
+            <p class="card-text textgray">
+              For a national retail chain, we created a social media marketing
+              campaign that increased followers by 25% and generated a 20%
+              increase in online sales.
+            </p>
+            <a href="#" class="btn textgreen">Learn more
+              <img class="img-fluid" src="./assets/Icon3.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- case study end -->
+  <!-- accordian start -->
+  <section class="container-xxl mt-5 pt-5">
+    <div class="d-inline-block ps-4">
+      <h3 class="rounded-2 px-1 py-3" style="background-color: var(--greencolor)">
+        Our Working Process
+      </h3>
+    </div>
+    <p class="ms-4 d-inline-block w-50">
+      Step-by-Step Guide to Archieving Your Business Goals
+    </p>
+    <!-- accordian -->
+    <div class="accordion mt-5 px-5" id="accordian1">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button border-bottom border-3 border-dark rounded-4"
+            style="background-color: var(--greencolor) !important" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h1 class="me-3">01</h1>
+            Consultation
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            During the initial consultation, we will discuss your business
+            goals and objectives, target audience, and current marketing
+            efforts. This will allow us to understand your needs and tailor
+            our services to best fit your requirements.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion mt-5 px-5" id="accordian2">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button border-bottom border-3 border-dark rounded-4"
+            style="background-color: var(--graycolor) !important" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h1 class="me-3">02</h1>
+            Research and Strategy Development
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            During the initial consultation, we will discuss your business
+            goals and objectives, target audience, and current marketing
+            efforts. This will allow us to understand your needs and tailor
+            our services to best fit your requirements.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion mt-5 px-5" id="accordian3">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button border-bottom border-3 border-dark rounded-4"
+            style="background-color: var(--graycolor) !important" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h1 class="me-3">03</h1>
+            Implementation
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            During the initial consultation, we will discuss your business
+            goals and objectives, target audience, and current marketing
+            efforts. This will allow us to understand your needs and tailor
+            our services to best fit your requirements.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion mt-5 px-5" id="accordian4">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button border-bottom border-3 border-dark rounded-4"
+            style="background-color: var(--graycolor) !important" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h1 class="me-3">04</h1>
+            Monitoring and Optimization
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            During the initial consultation, we will discuss your business
+            goals and objectives, target audience, and current marketing
+            efforts. This will allow us to understand your needs and tailor
+            our services to best fit your requirements.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion mt-5 px-5" id="accordian5">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button border-bottom border-3 border-dark rounded-4"
+            style="background-color: var(--graycolor) !important" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h1 class="me-3">05</h1>
+            Reporting and Communication
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            During the initial consultation, we will discuss your business
+            goals and objectives, target audience, and current marketing
+            efforts. This will allow us to understand your needs and tailor
+            our services to best fit your requirements.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion mt-5 px-5" id="accordian5">
+      <div class="accordion-item border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button border-bottom border-3 border-dark rounded-4"
+            style="background-color: var(--graycolor) !important" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h1 class="me-3">06</h1>
+            Continual Improvement
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            During the initial consultation, we will discuss your business
+            goals and objectives, target audience, and current marketing
+            efforts. This will allow us to understand your needs and tailor
+            our services to best fit your requirements.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- accordian end -->
 
-    
-     <!-- bootstrape js -->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  <!-- team start -->
+  <section class="container-xxl mt-5 pt-5">
+    <div class="d-inline-block ps-4">
+      <h3 class="rounded-2 px-1 py-3" style="background-color: var(--greencolor)">
+        Team
+      </h3>
+    </div>
+    <p class="ms-4 d-inline-block w-50">
+      Meet the skilled and experienced team behind our successful digital
+      marketing strategies
+    </p>
+    <div class="row">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card rounded-5 p-2">
+          <div class="card-body">
+            <img class="pb-4" src="./assets/Picture1.png" alt="" />
+            <div class="d-inline-block mt-5">
+              <h5 class="card-title">John Smith</h5>
+              <p class="card-text">CEO and Founder</p>
+            </div>
+            <hr class="border border-1 border-black" />
+            <p>
+              10+ years of experience in digital marketing. Expertise in SEO,
+              PPC, and content strategy
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card rounded-5 px-2">
+          <div class="card-body">
+            <img class="pb-4" src="./assets/picture2.png" alt="" />
+            <div class="d-inline-block mt-5">
+              <h5 class="card-title">Jane Doe</h5>
+              <p class="card-text">Director of Operations</p>
+            </div>
+            <hr class="border border-1 border-black" />
+            <p>
+              7+ years of experience in project management and team
+              leadership. Strong organizational and communication skills
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-3 mb-sm-0">
+        <div class="card rounded-5 px-2">
+          <div class="card-body">
+            <img class="pb-4" src="./assets/picture3.png" alt="" />
+            <div class="d-inline-block mt-5">
+              <h5 class="card-title">Michael Brown</h5>
+              <p class="card-text">Senior SEO Specialist</p>
+            </div>
+            <hr class="border border-1 border-black" />
+            <p>
+              5+ years of experience in SEO and content creation. Proficient
+              in keyword research and on-page optimization
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mt-4 mb-sm-0">
+        <div class="card rounded-5 px-2">
+          <div class="card-body">
+            <img class="pb-4" src="./assets/picture6.png" alt="" />
+            <div class="d-inline-block mt-5">
+              <h5 class="card-title">Emily Johnson</h5>
+              <p class="card-text">PPC Manager</p>
+            </div>
+            <hr class="border border-1 border-black" />
+            <p>
+              3+ years of experience in paid search advertising. Skilled in
+              campaign management and performance analysis
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mt-4 mb-sm-0">
+        <div class="card rounded-5 px-2">
+          <div class="card-body">
+            <img class="pb-4" src="./assets/picture4.png" alt="" />
+            <div class="d-inline-block mt-3">
+              <h5 class="card-title">Brian Williamsn</h5>
+              <p class="card-text">Social Media Specialist</p>
+            </div>
+            <hr class="border border-1 border-black" />
+            <p>
+              4+ years of experience in social media marketing. Proficient in
+              creating and scheduling content, analyzing metrics, and building
+              engagement
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mt-4 mb-sm-0">
+        <div class="card rounded-5 px-2">
+          <div class="card-body">
+            <img class="pb-4" src="./assets/picture5.png" alt="" />
+            <div class="d-inline-block mt-5">
+              <h5 class="card-title">Sarah Kim</h5>
+              <p class="card-text">Content Creator</p>
+            </div>
+            <hr class="border border-1 border-black" />
+            <p>
+              2+ years of experience in writing and editing Skilled in
+              creating compelling, SEO-optimized content for various
+              industries
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-5 pb-5 d-flex justify-content-center align-items-center">
+      <button type="button" class="btn btn-dark px-5 py-3 rounded-3">
+        See all team
+      </button>
+    </div>
+  </section>
+  <!-- team end -->
+  <!-- testimonals start -->
+  <section class="container-xxl mt-5 pt-5">
+    <div class="d-inline-block ps-4">
+      <h3 class="rounded-2 px-1 py-3" style="background-color: var(--greencolor)">
+        Testimonals
+      </h3>
+    </div>
+    <p class="ms-4 d-inline-block w-50">
+      Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+      about Our Digital Marketing Services
+    </p>
+    <!-- swiper -->
+    <div class="swiper mySwiper bg-dark rounded-5 mx-2 mt-5 p-5">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-swiper p-3">
+            <p class="pt-4">
+              "We have been working with Positivus for the past year and have
+              seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive,
+              and truly cares about the success of our business. We highly
+              recommend Positivus to any company looking to grow their online
+              presence."
+            </p>
+            <div>
+              <h6>John Smith</h6>
+              <p class="d-block">Marketing Director at XYZ Corp</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-swiper p-3">
+            <p class="pt-4">
+              "We have been working with Positivus for the past year and have
+              seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive,
+              and truly cares about the success of our business. We highly
+              recommend Positivus to any company looking to grow their online
+              presence."
+            </p>
+            <div>
+              <h6>Andy Welston</h6>
+              <p class="d-block">Marketing Director at XYZ Corp</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-swiper">
+            <p class="pt-4">
+              "We have been working with Positivus for the past year and have
+              seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive,
+              and truly cares about the success of our business. We highly
+              recommend Positivus to any company looking to grow their online
+              presence."
+            </p>
+            <div>
+              <h6>Simmon Kai</h6>
+              <p class="d-block">Marketing Director at XYZ Corp</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-swiper p-3">
+            <p class="pt-4">
+              "We have been working with Positivus for the past year and have
+              seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive,
+              and truly cares about the success of our business. We highly
+              recommend Positivus to any company looking to grow their online
+              presence."
+            </p>
+            <div>
+              <h6>Aliza Kazi</h6>
+              <p class="d-block">Marketing Director at XYZ Corp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination dots -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- testimonals end -->
+  <!-- contact us start -->
+  <section class="container-xxl mt-5 pt-5">
+    <div class="d-inline-block ps-4">
+      <h3 class="rounded-2 px-1 py-3" style="background-color: var(--greencolor)">
+        Contact Us
+      </h3>
+    </div>
+    <p class="ms-4 d-inline-block w-50">
+      Connect with Us: Let's Discuss Your Digital Marketing Needs
+    </p>
+    <div class="row m-5 p-5 rounded-5" style="background-color: var(--graycolor)">
+      <div class="col-12 col-lg-6 col-md-6">
+        <form>
+          <div class="mb-3 form-check d-inline-block">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Say Hi</label>
+          </div>
+          <div class="mb-3 form-check d-inline-block ms-3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Get a Quote</label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="name" placeholder="Name" class="form-control border-dark" id="exampleInputEmail1"
+              aria-describedby="emailHelp" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" placeholder="Email" class="form-control border-dark" id="exampleInputEmail1"
+              aria-describedby="emailHelp" />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control border-dark" placeholder="Message" id="exampleFormControlTextarea1"
+              rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn bg-dark text-white w-100">
+            Send Message
+          </button>
+        </form>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6">
+        <img class="img-fluid d-none d-lg-block" src="./assets/mask.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- contact us end -->
+  <!-- footer start -->
+  <footer class="container-xxl bg-dark text-white mt-5 p-5 rounded-5">
+    <nav class="container-xxl navbar navbar-expand-lg py-3 px-3">
+      <div class="container-xxl">
+        <a class="navbar-brand img-fluid" href="#"><img src="./assets/Logo.png" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Use Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+          <div class="social-icons d-flex justify-content-center align-items-center gap-2">
+            <div class="text-black bg-white rounded-circle p-2"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="text-black bg-white rounded-circle p-2"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="text-black bg-white rounded-circle p-2"><i class="fa-brands fa-twitter"></i></div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-6 ps-5 pt-4">
+        <button type="button" class="btn p-2 rounded-3" style="background-color: var(--greencolor);">
+          Contact Us
+        </button>
+        <p class="my-4">Email: info@positivus.com</p>
+        <p>Phone: 555-567-8901</p>
+        <p>Address: 1234 Main St</p>
+        <p>Moonstone City, Stardust State 12345</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="p-5 mt-3 rounded-5" style="background-color: #292A32;">
+          <div class="mb-3 width-email d-inline-block">
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="email" placeholder="Email" class="form-control bg-transparent shadow-none border-white" id="exampleFormControlInput1">
+          </div>
+          <button type="button" class="btn btn-footer ms-3" data-bs-toggle="button" aria-pressed="true"
+            style="background-color: var(--greencolor);">Subscribe to news</button>
+        </div>
+      </div>
+    </div>
+    <hr class="bg-white">
+    <div class="pt-4"><p>© 2023 Positivus. All Rights Reserved. <span class="ms-4">Privacy Policy</span></p></div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script>
+    new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      /* Responsive */
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+
+  <!-- bootstrape js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
