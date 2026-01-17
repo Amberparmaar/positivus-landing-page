@@ -103,6 +103,13 @@ footer .nav-link{
   }
 .card-swiper{
     height: auto !important;
-}  
+} 
+.width-email{
+    width: 100%;
+}
+.btn-footer{
+    width: 100%;
+    margin-left: 0 !important;
+} 
  }
 
