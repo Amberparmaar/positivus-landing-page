@@ -110,6 +110,12 @@ footer .nav-link{
 .btn-footer{
     width: 100%;
     margin-left: 0 !important;
+    margin-top: 20px !important;
 } 
+.d-inline-block{
+    display: inline !important;
+    text-align: center !important;
+    margin-left: 0 !important;
+}
  }
 
